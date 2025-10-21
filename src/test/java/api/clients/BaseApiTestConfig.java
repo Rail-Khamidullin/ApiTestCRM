@@ -1,6 +1,7 @@
-package utils;
+package api.clients;
 
 import org.junit.jupiter.api.BeforeAll;
+import utils.TokenAuthorization;
 
 public class BaseApiTestConfig {
 

@@ -3,9 +3,7 @@ package utils;
 import io.qameta.allure.Step;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
-
 import java.util.Map;
-
 import static io.restassured.RestAssured.given;
 
 public class TokenAuthorization {
