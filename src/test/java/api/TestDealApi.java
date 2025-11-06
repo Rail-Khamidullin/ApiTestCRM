@@ -9,11 +9,11 @@ import java.io.IOException;
 
 public class TestDealApi extends BaseApiTestConfig {
 
-    private String interestId;
-    private int contactId;
-    private int objectId;
-    private int dealId;
-    private float objectDiscountAmount;
+    private String interestId;            // id Лида
+    private int contactId;                // id Контакта
+    private int objectId;                 // id Объекта
+    private int dealId;                   // id Сделки
+    private float objectDiscountAmount;   // булевое значение заполненности сделки для перевода в статус "Оплачено"
     TestData testData = new TestData();
 
     @Test

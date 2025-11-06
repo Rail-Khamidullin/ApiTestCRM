@@ -17,8 +17,6 @@ import static io.restassured.RestAssured.given;
 
 public class TestData {
 
-    String df = REGISTRATION_EMAIL;
-
     /// === Создание Лида ===
 
     @Step("Создание Лида")
@@ -30,7 +28,7 @@ public class TestData {
         ArrayNode contactsInfoList = (ArrayNode) testData.get("extContact").get("contactsInfoList");
         // Получаем первый элемент массива и приводим к ObjectNode
         ObjectNode firstContact = (ObjectNode) contactsInfoList.get(0);
-        // firstContact.put("name", UUID.randomUUID() + "@mail.ru");
+        // Вкладываем рандомный номер телефона в поле name
         firstContact.put("name", Generator.generatePhone());
         Response response =
                 given()
