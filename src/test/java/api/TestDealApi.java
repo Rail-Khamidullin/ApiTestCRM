@@ -19,7 +19,7 @@ public class TestDealApi extends BaseApiTestConfig {
     @Test
     @DisplayName("Создание Лида, перевод лида в интерес, создание сделки, перевод сделки в статус Оплачено")
     public void testDataApi() throws IOException {
-        objectId = 3568;
+        objectId = 2220;
         for (int i = 0; i < 1; i++) {
             Response responseCreate = testData.createInterest();                   // Создание Лида
             interestId = testData.getInterestId(responseCreate);
@@ -37,6 +37,7 @@ public class TestDealApi extends BaseApiTestConfig {
             objectDiscountAmount = testData.getObjectDiscount(responseUpdate);
 
             testData.moveDealToPreparation(dealId);                                // Перевод сделки в статус Подготовка
+            testData.calculateSchedulePayments(dealId);                            // Сформировать график платежей
             testData.moveDealToApproval(dealId);                                   // Перевод сделки в статус Согласование
             testData.moveDealToContractReview(dealId);                             // Перевод сделки в статус Проверка договора
             testData.generatePrimaryDocument(dealId);                              // Сгенерировать первичный документ

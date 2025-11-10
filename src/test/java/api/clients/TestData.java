@@ -139,7 +139,7 @@ public class TestData {
 
     /// === Заполнение полей сделки для перевода в статус "Оплачено" ===
 
-    @Step("Заполнение полей сделки для перевода в статус 'Оплачено'")
+    @Step("Заполнение полей сделки на стадии 'Бесплатная бронь' для перевода в статус 'Оплачено'")
     public Response updateAllFields(int dealId) throws IOException {
         ObjectMapper mapper = new ObjectMapper();
         ObjectNode testData = mapper.readValue(new File("src/test/resources/json/update_all_fields.json"), ObjectNode.class);
@@ -171,6 +171,19 @@ public class TestData {
                 .when()
                 .contentType(ContentType.JSON)
                 .post(BASE_URI + "/api/v1/deal/" + dealId + "/prepare")
+                .then().log().all()
+                .statusCode(200);
+    }
+
+    /// === Тап по кнопке в сделке "Сформировать график платежей" ===
+
+    @Step("Сформировать график платежей")
+    public void calculateSchedulePayments(int dealId) {
+        given().log().body()
+                .header("Authorization", "Bearer " + BaseApiTestConfig.TOKEN)
+                .when()
+                .contentType(ContentType.JSON)
+                .post(BASE_URI + "/api/v1/deal/" + dealId + "/schedule_payments")
                 .then().log().all()
                 .statusCode(200);
     }
