@@ -1,0 +1,21 @@
+{
+  "personalData": {
+    "citizenshipId": 1,
+    "documentSeries": "22 22",
+    "documentNumber": "222222",
+    "issueAuthority": "Москва",
+    "issueDate": "2025-09-24",
+    "issueDepartment": "540-000",
+    "gender": "MALE",
+    "birthDate": "2025-09-24",
+    "birthPlace": "Москва",
+    "registrationAddress": "Московская обл, г Реутов, шоссе Автомагистраль Москва-Нижний Новгород",
+    "livingAddress": "Московская обл, г Реутов, шоссе Автомагистраль Москва-Нижний Новгород",
+    "inn": "000000000000",
+    "snils": "000-000-000 00"
+  },
+  "bankAccount": {},
+  "requisitesTypeId": 1,
+  "documentTypeId": 1,
+  "contactId": 310899
+}

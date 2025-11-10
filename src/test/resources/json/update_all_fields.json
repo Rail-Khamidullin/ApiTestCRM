@@ -1,0 +1,35 @@
+{
+  "responsible": {
+    "responsibleType": "USER",
+    "responsibleId": 1
+  },
+  "contract": {
+    "date": "2025-09-23",
+    "fillingRosreestrDate": "2025-09-16",
+    "registrationNumber": "999999999",
+    "registrationDate": "2025-09-02"
+  },
+  "initialPaymentTerm": 5,
+  "registration": {
+    "registrationTypeId": 1,
+    "electronicRegistrationTypeId": 2,
+    "registrationCenterId": 4
+  },
+  "escrowAccount": {
+    "accountNumber": "88888888888888888888"
+  },
+  "creditLetter": {
+    "creditLetterId": 3
+  },
+  "signerId": 1,
+  "formId": 1,
+  "counterparties": [
+    {
+      "id": 44094,
+      "requisitesTypeId": 1,
+      "clientRoleId": 1,
+      "useRequisitesForRefund": false,
+      "engaged": false
+    }
+  ]
+}

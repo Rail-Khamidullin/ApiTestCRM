@@ -1,0 +1,14 @@
+{
+  "documentTypeId": 57,
+  "contactId": 310894,
+  "actual": true,
+  "files": [
+    "fc53278e-3219-4134-ab33-f93b909bb8ec"
+  ],
+  "crmRelations": [
+    {
+      "typeId": 3,
+      "relatedId": 34677
+    }
+  ]
+}

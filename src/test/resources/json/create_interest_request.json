@@ -1,0 +1,16 @@
+{
+  "responsible": {
+    "responsibleType": "USER",
+    "responsibleId": 1
+  },
+  "extContact": {
+    "name": "AvtoJava",
+    "contactsInfoList": [
+      {
+        "contactsInfoTypeId": 1,
+        "name": "+79008887766",
+        "isConfirm": false
+      }
+    ]
+  }
+}
